@@ -1,13 +1,23 @@
-import './App.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Dashboard from "../Pages/Dashboard";
+import Navbar from "../Components/Navbar";
+import AbouttheFounder from '../Pages/About Us/AbouttheFounder'
+import MissionVision from "../Pages/About Us/MissionVision";
 
-function App() {
-
-
+const App = () => {
   return (
     <>
-      <h1>MYK</h1>
-    </>
-  )
-}
+      <Navbar />
 
-export default App
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/aboutus/AbouttheFounder" element={<AbouttheFounder />} />
+        <Route path="/aboutus/missionvision" element={<MissionVision/>} />
+
+      </Routes>
+    </>
+  );
+};
+
+export default App;

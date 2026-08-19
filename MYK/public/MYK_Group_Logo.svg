@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-labelledby="title desc">
+  <title id="title">MYK Group Logo</title>
+  <desc id="desc">A professional blue and gold MYK Group wordmark with an abstract geometric M icon.</desc>
+
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B2D5C"/>
+      <stop offset="1" stop-color="#164F8A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9A441"/>
+      <stop offset="1" stop-color="#F0C96A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <g transform="translate(25 35)">
+    <path d="M0 150V20h32l58 67 58-67h32v130h-38V76l-52 61h-1L37 76v74H0Z"
+          fill="url(#blue)"/>
+    <path d="M90 87 142 20h38L90 150 52 102l19-24 19 9Z"
+          fill="url(#gold)" opacity=".98"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="245" y="135"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="92"
+        font-weight="800"
+        letter-spacing="5"
+        fill="url(#blue)">MYK</text>
+
+  <rect x="250" y="160" width="285" height="5" rx="2.5" fill="url(#gold)"/>
+
+  <text x="250" y="204"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="30"
+        font-weight="600"
+        letter-spacing="8"
+        fill="#333B46">GROUP</text>
+</svg>
