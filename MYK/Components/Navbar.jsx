@@ -40,6 +40,75 @@ const Navbar = () => {
               Mission & Vision
             </Link>
 
+             <Link to="/aboutus/companyobjectives">
+              Company Objectives
+            </Link>
+
+             <Link to="/aboutus/headofficeorganization">
+             Head Office Organization
+            </Link>
+
+             <Link to="/aboutus/keyprofessionals">
+               Key Professionals
+            </Link>
+
+             <Link to="/aboutus/distinctfeatures">
+              Distinct Features
+            </Link>
+
+             <Link to="/aboutus/certifications">
+              Certifications
+            </Link>
+
+             <Link to="/aboutus/groupcompanies">
+              Group Companies
+            </Link>
+
+          </div>
+
+        </li>
+
+        {/* //Energy */}
+
+        <li className="about-menu">
+
+          <li>Energy</li>
+
+          {/* DROPDOWN */}
+          <div className="dropdown">
+
+            <Link to="/energy/aboutus">
+              About Us
+            </Link>
+
+            <Link to="/energy/missionsvision">
+              Mission & Vision
+            </Link>
+
+             <Link to="/energy/partners">
+              Partners
+            </Link>
+
+             <Link to="/energy/keyprofessional">
+             Key Professionals
+            </Link>
+
+             <Link to="/aboutus/keyprofessionals">
+               Key Professionals
+            </Link>
+
+             <Link to="/aboutus/distinctfeatures">
+              Distinct Features
+            </Link>
+
+             <Link to="/aboutus/certifications">
+              Certifications
+            </Link>
+
+             <Link to="/aboutus/groupcompanies">
+              Group Companies
+            </Link>
+
           </div>
 
         </li>
