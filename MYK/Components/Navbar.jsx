@@ -93,20 +93,67 @@ const Navbar = () => {
              Key Professionals
             </Link>
 
-             <Link to="/aboutus/keyprofessionals">
-               Key Professionals
+             <Link to="/energy/efficiencies">
+               Efficiencies
             </Link>
 
-             <Link to="/aboutus/distinctfeatures">
-              Distinct Features
+            {/* Products  */}
+
+             <li className="products-menu">
+
+  <Link to="/energy/products">
+    Products
+  </Link>
+
+  <div className="products-dropdown">
+
+    <Link to="/energy/products/solarpanel">
+      Solar Panel
+    </Link>
+
+    <Link to="/energy/products/inverters">
+      Inverters
+    </Link>
+
+    <Link to="/energy/products/energystorage">
+      XD3 Energy Storage System
+    </Link>
+
+    <Link to="/energy/products/cables">
+      Cables
+    </Link>
+
+  </div>
+
+</li>
+
+             <Link to="/energy/projects">
+              Projects
             </Link>
 
-             <Link to="/aboutus/certifications">
-              Certifications
+             <Link to="/energy/contact">
+              Contact
             </Link>
 
-             <Link to="/aboutus/groupcompanies">
-              Group Companies
+          </div>
+
+        </li>
+
+              {/* Real Estate */}
+
+              <li className="about-menu">
+
+          <li>Real Estate</li>
+
+          {/* DROPDOWN */}
+          <div className="dropdown">
+
+            <Link to="/realestate/aboutus2">
+              About Us
+            </Link>
+
+            <Link to="/realestate/services1">
+              Services
             </Link>
 
           </div>
