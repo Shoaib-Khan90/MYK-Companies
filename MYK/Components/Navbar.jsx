@@ -160,6 +160,32 @@ const Navbar = () => {
 
         </li>
 
+        {/* Services */}
+
+        
+              <li className="about-menu">
+
+          <li>Services</li>
+
+          {/* DROPDOWN */}
+          <div className="dropdown">
+
+            <Link to="/services/assetevaluation">
+              ASSET EVALUATION
+            </Link>
+
+            <Link to="/services/vehiclerolling">
+              VEHICLE AND ROLLING EQUIPMENT EVALUATION
+            </Link>
+
+               <Link to="/services/stockinspections">
+              STOCK INSPECTIONS
+            </Link>
+
+          </div>
+
+        </li>
+
       </ul>
     </nav>
   );

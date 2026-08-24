@@ -24,6 +24,10 @@ import Projects from "../Pages/Energy/Projects";
 import Contact from '../Pages/Energy/Contact'
 import AboutUs2 from "../Pages/Real Estate/AboutUs2";
 import Services1 from '../Pages/Real Estate/Services1'
+import AssetEvaluation from '../Pages/Services/AssetEvaluation'
+import VehicleRolling from "../Pages/Services/VehicleRolling";
+import StockInspections from '../Pages/Services/StockInspections'
+
 
 
 const App = () => {
@@ -55,6 +59,9 @@ const App = () => {
         <Route path="/energy/contact" element={<Contact/>} />
         <Route path="/realestate/aboutus2" element={<AboutUs2/>} />
         <Route path="/realestate/services1" element={<Services1/>} />
+        <Route path="/services/assetevaluation" element={<AssetEvaluation/>} />
+        <Route path="/services/vehiclerolling" element={<VehicleRolling/>} />
+        <Route path="/services/stockinspections" element={<StockInspections/>} />
 
 
           
