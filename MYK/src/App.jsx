@@ -35,8 +35,11 @@ import MarketResearch from '../Pages/Services/MarketResearch'
 import ManagementServices from '../Pages/Services/ManagementServices'
 import Affiliation from "../Pages/Affiliation/Affiliation";
 import OurClients from '../Pages/Our Clients/OurClients'
-
-
+import OurProjects from '../Pages/OurProjects/OurProjects'
+import BranchLocation from '../Pages/Branch Location/BranchLocation'
+import Career from "../Pages/Inquiry/Career";
+import Inquiry from "../Pages/Inquiry";
+import Services2 from '../Pages/Services2'
 
 const App = () => {
   return (
@@ -78,6 +81,12 @@ const App = () => {
         <Route path="/services/managementservices" element={<ManagementServices/>} />
         <Route path="/affiliation/affiliation" element={<Affiliation/>} />
         <Route path="/ourclients/ourclients" element={<OurClients/>} />
+        <Route path="/ourprojects/ourprojects" element={<OurProjects/>} />
+        <Route path="/branchlocation/branchlocation" element={<BranchLocation/>} />
+        <Route path="/inquiry/career" element={<Career/>} />
+        <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/services2" element={<Services2 />} />
 
 
           
