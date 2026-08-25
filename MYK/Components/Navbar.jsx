@@ -1,254 +1,266 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faPhone,
+  faChevronDown,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import './navbar.css'
+import "./navbar.css";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="navbar">
+    <header className="navbar-wrapper">
 
-      {/* LOGO */}
-      <Link to="/">
-        <img
-          src="/MYK_Group_Logo.svg"
-          alt="MYK Group Logo"
-          className="logo"
-          width={"150px"}
-        />
-      </Link>
+      <nav className="navbar">
 
-      {/* MENU */}
-      <ul className="menu">
+        {/* LOGO */}
+        <Link to="/" className="logo-link">
+          <img
+            src="/MYK_Group_Logo.svg"
+            alt="MYK Group Logo"
+            className="logo"
+          />
+        </Link>
 
-        <li>
-          <Link to="/dashboard">Home</Link>
-        </li>
+        {/* MOBILE MENU BUTTON */}
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon
+            icon={menuOpen ? faXmark : faBars}
+          />
+        </button>
 
-        {/* ABOUT US */}
-        <li className="about-menu">
+        {/* MENU */}
+        <ul className={`menu ${menuOpen ? "menu-open" : ""}`}>
 
-          <Link to="/aboutus">About Us</Link>
-
-          {/* DROPDOWN */}
-          <div className="dropdown">
-
-            <Link to="/aboutus/aboutthefounder">
-              About the Founder
+          <li>
+            <Link
+              to="/dashboard"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
             </Link>
+          </li>
 
-            <Link to="/aboutus/missionvision">
-              Mission & Vision
-            </Link>
-
-             <Link to="/aboutus/companyobjectives">
-              Company Objectives
-            </Link>
-
-             <Link to="/aboutus/headofficeorganization">
-             Head Office Organization
-            </Link>
-
-             <Link to="/aboutus/keyprofessionals">
-               Key Professionals
-            </Link>
-
-             <Link to="/aboutus/distinctfeatures">
-              Distinct Features
-            </Link>
-
-             <Link to="/aboutus/certifications">
-              Certifications
-            </Link>
-
-             <Link to="/aboutus/groupcompanies">
-              Group Companies
-            </Link>
-
-          </div>
-
-        </li>
-
-        {/* //Energy */}
-
-        <li className="about-menu">
-
-          <li>Energy</li>
-
-          {/* DROPDOWN */}
-          <div className="dropdown">
-
-            <Link to="/energy/aboutus">
+          {/* ABOUT */}
+          <li className="menu-item">
+            <Link to="/aboutus">
               About Us
+              <FontAwesomeIcon icon={faChevronDown} />
             </Link>
 
-            <Link to="/energy/missionsvision">
-              Mission & Vision
-            </Link>
+            <div className="dropdown">
+              <Link to="/aboutus/aboutthefounder">
+                About the Founder
+              </Link>
 
-             <Link to="/energy/partners">
-              Partners
-            </Link>
+              <Link to="/aboutus/missionvision">
+                Mission & Vision
+              </Link>
 
-             <Link to="/energy/keyprofessional">
-             Key Professionals
-            </Link>
+              <Link to="/aboutus/companyobjectives">
+                Company Objectives
+              </Link>
 
-             <Link to="/energy/efficiencies">
-               Efficiencies
-            </Link>
+              <Link to="/aboutus/headofficeorganization">
+                Head Office Organization
+              </Link>
 
-            {/* Products  */}
+              <Link to="/aboutus/keyprofessionals">
+                Key Professionals
+              </Link>
 
-             <li className="products-menu">
+              <Link to="/aboutus/distinctfeatures">
+                Distinct Features
+              </Link>
 
-  <Link to="/energy/products">
-    Products
-  </Link>
+              <Link to="/aboutus/certifications">
+                Certifications
+              </Link>
 
-  <div className="products-dropdown">
+              <Link to="/aboutus/groupcompanies">
+                Group Companies
+              </Link>
+            </div>
+          </li>
 
-    <Link to="/energy/products/solarpanel">
-      Solar Panel
-    </Link>
+          {/* ENERGY */}
+          <li className="menu-item">
+            <span className="menu-title">
+              Energy
+              <FontAwesomeIcon icon={faChevronDown} />
+            </span>
 
-    <Link to="/energy/products/inverters">
-      Inverters
-    </Link>
+            <div className="dropdown">
 
-    <Link to="/energy/products/energystorage">
-      XD3 Energy Storage System
-    </Link>
+              <Link to="/energy/aboutus">
+                About Us
+              </Link>
 
-    <Link to="/energy/products/cables">
-      Cables
-    </Link>
+              <Link to="/energy/missionsvision">
+                Mission & Vision
+              </Link>
 
-  </div>
+              <Link to="/energy/partners">
+                Partners
+              </Link>
 
-</li>
+              <Link to="/energy/keyprofessional">
+                Key Professionals
+              </Link>
 
-             <Link to="/energy/projects">
-              Projects
-            </Link>
+              <Link to="/energy/efficiencies">
+                Efficiencies
+              </Link>
 
-             <Link to="/energy/contact">
-              Contact
-            </Link>
+              <div className="submenu-item">
+                <Link to="/energy/products">
+                  Products
+                  <FontAwesomeIcon icon={faChevronDown} />
+                </Link>
 
-          </div>
+                <div className="sub-dropdown">
+                  <Link to="/energy/products/solarpanel">
+                    Solar Panel
+                  </Link>
 
-        </li>
+                  <Link to="/energy/products/inverters">
+                    Inverters
+                  </Link>
 
-              {/* Real Estate */}
+                  <Link to="/energy/products/energystorage">
+                    XD3 Energy Storage System
+                  </Link>
 
-              <li className="about-menu">
+                  <Link to="/energy/products/cables">
+                    Cables
+                  </Link>
+                </div>
+              </div>
 
-          <li>Real Estate</li>
+              <Link to="/energy/projects">
+                Projects
+              </Link>
 
-          {/* DROPDOWN */}
-          <div className="dropdown">
+              <Link to="/energy/contact">
+                Contact
+              </Link>
+            </div>
+          </li>
 
-            <Link to="/realestate/aboutus2">
-              About Us
-            </Link>
+          {/* REAL ESTATE */}
+          <li className="menu-item">
+            <span className="menu-title">
+              Real Estate
+              <FontAwesomeIcon icon={faChevronDown} />
+            </span>
 
-            <Link to="/realestate/services1">
+            <div className="dropdown">
+              <Link to="/realestate/aboutus2">
+                About Us
+              </Link>
+
+              <Link to="/realestate/services1">
+                Services
+              </Link>
+            </div>
+          </li>
+
+          {/* SERVICES */}
+          <li className="menu-item">
+            <Link to="/services2">
               Services
+              <FontAwesomeIcon icon={faChevronDown} />
             </Link>
 
-          </div>
+            <div className="dropdown">
+              <Link to="/services/assetevaluation">
+                Asset Evaluation
+              </Link>
 
-        </li>
+              <Link to="/services/vehiclerolling">
+                Vehicle & Rolling Equipment Evaluation
+              </Link>
 
-        {/* Services */}
+              <Link to="/services/stockinspections">
+                Stock Inspections
+              </Link>
 
-        
-              <li className="about-menu">
+              <Link to="/services/stockevaluation">
+                Stock Evaluation
+              </Link>
 
-          <Link to="/services2">Services</Link>
+              <Link to="/services/collateralmanagement">
+                Collateral Management
+              </Link>
 
-          {/* DROPDOWN */}
-          <div className="dropdown">
+              <Link to="/services/realestate">
+                REIT Consultancy
+              </Link>
 
-            <Link to="/services/assetevaluation">
-              ASSET EVALUATION
+              <Link to="/services/building">
+                Building & Project Consultancy
+              </Link>
+
+              <Link to="/services/marketresearch">
+                Market Research Study
+              </Link>
+
+              <Link to="/services/managementservices">
+                Real Estate Management Services
+              </Link>
+            </div>
+          </li>
+
+          <li>
+            <Link to="/affiliation/affiliation">
+              Affiliation
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/ourclients/ourclients">
+              Our Clients
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/ourprojects/ourprojects">
+              Our Projects
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/branchlocation/branchlocation">
+              Branch Location
+            </Link>
+          </li>
+
+          {/* INQUIRY */}
+          <li className="menu-item">
+            <Link to="/inquiry">
+              Inquiry
+              <FontAwesomeIcon icon={faChevronDown} />
             </Link>
 
-            <Link to="/services/vehiclerolling">
-              VEHICLE AND ROLLING EQUIPMENT EVALUATION
-            </Link>
+            <div className="dropdown inquiry-dropdown">
+              <Link to="/inquiry/career">
+                Careers
+              </Link>
+            </div>
+          </li>
 
-               <Link to="/services/stockinspections">
-              STOCK INSPECTIONS
-            </Link>
+        </ul>
 
-            <Link to="/services/stockevaluation">
-              STOCK EVALUATION
-            </Link>
-
-            <Link to="/services/collateralmanagement">
-              COLLATERAL MANAGEMENT
-            </Link>
-
-               <Link to="/services/realestate">
-              Real Estate Investment Trust (REIT) Consultancy
-            </Link>
-
-            <Link to="/services/building">
-              Building & Project Consultancy
-            </Link>
-
-            <Link to="/services/marketresearch">
-              Market Research Study For Projects
-            </Link>
-
-            <Link to="/services/managementservices">
-              Real Estate Management Services
-            </Link>
-          </div>
-
-        </li>
-
-
-        <li>
-          <Link to="/affiliation/affiliation">
-          Affiliation
-          </Link>
-        </li>
-
-         <li>
-          <Link to="/ourclients/ourclients">
-          Our Clients
-          </Link>
-        </li>
-
-           <li>
-          <Link to="/ourprojects/ourprojects">
-          Our Projects
-          </Link>
-        </li>
-
-        <li>
-          <Link to="/branchlocation/branchlocation">
-          Branch Location
-          </Link>
-        </li>
-
-        {/* Inquiry */}
-
-        <li className="about-menu">
-        <Link to="/inquiry">Inquiry</Link>
-
-  {/* DROPDOWN */}
-  <div className="dropdown">
-    <Link to="/inquiry/career">
-       Careers
-    </Link>
-  </div>
-</li>
-
-      </ul>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
