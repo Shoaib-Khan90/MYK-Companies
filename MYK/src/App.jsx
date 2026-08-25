@@ -27,6 +27,14 @@ import Services1 from '../Pages/Real Estate/Services1'
 import AssetEvaluation from '../Pages/Services/AssetEvaluation'
 import VehicleRolling from "../Pages/Services/VehicleRolling";
 import StockInspections from '../Pages/Services/StockInspections'
+import StockEvaluation from '../Pages/Services/StockEvaluation'
+import CollateralManagement from "../Pages/Services/CollateralManagement";
+import Realestate from "../Pages/Services/Realestate";
+import Building from "../Pages/Services/Building";
+import MarketResearch from '../Pages/Services/MarketResearch'
+import ManagementServices from '../Pages/Services/ManagementServices'
+import Affiliation from "../Pages/Affiliation/Affiliation";
+import OurClients from '../Pages/Our Clients/OurClients'
 
 
 
@@ -62,6 +70,14 @@ const App = () => {
         <Route path="/services/assetevaluation" element={<AssetEvaluation/>} />
         <Route path="/services/vehiclerolling" element={<VehicleRolling/>} />
         <Route path="/services/stockinspections" element={<StockInspections/>} />
+        <Route path="/services/stockevaluation" element={<StockEvaluation/>} />
+        <Route path="/services/collateralmanagement" element={<CollateralManagement/>} />
+        <Route path="/services/realestate" element={<Realestate/>} />
+        <Route path="/services/building" element={<Building/>} />
+        <Route path="/services/marketresearch" element={<MarketResearch/>} />
+        <Route path="/services/managementservices" element={<ManagementServices/>} />
+        <Route path="/affiliation/affiliation" element={<Affiliation/>} />
+        <Route path="/ourclients/ourclients" element={<OurClients/>} />
 
 
           

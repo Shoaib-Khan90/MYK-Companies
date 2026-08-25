@@ -182,8 +182,42 @@ const Navbar = () => {
               STOCK INSPECTIONS
             </Link>
 
+            <Link to="/services/stockevaluation">
+              STOCK EVALUATION
+            </Link>
+
+            <Link to="/services/collateralmanagement">
+              COLLATERAL MANAGEMENT
+            </Link>
+
+               <Link to="/services/realestate">
+              Real Estate Investment Trust (REIT) Consultancy
+            </Link>
+
+            <Link to="/services/building">
+              Building & Project Consultancy
+            </Link>
+
+            <Link to="/services/marketresearch">
+              Market Research Study For Projects
+            </Link>
+
+            <Link to="/services/managementservices">
+              Real Estate Management Services
+            </Link>
           </div>
 
+        </li>
+        <li>
+          <Link to="/affiliation/affiliation">
+          Affiliation
+          </Link>
+        </li>
+
+         <li>
+          <Link to="/ourclients/ourclients">
+          Our Clients
+          </Link>
         </li>
 
       </ul>
