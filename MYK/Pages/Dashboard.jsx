@@ -1,11 +1,98 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import "./dashboard.css";
+
+const slides = [
+  "/Images/1.png",
+  "/Images/2.png",
+  "/Images/3.jpg",
+  "/Images/4.png",
+  "/Images/5.jpg"
+];
 
 const Dashboard = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  )
-}
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-export default Dashboard
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) =>
+        prev === slides.length - 1 ? 0 : prev + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === slides.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const previousSlide = () => {
+    setCurrentSlide((prev) =>
+      prev === 0 ? slides.length - 1 : prev - 1
+    );
+  };
+
+  return (
+    <section className="hero-slider">
+
+      <div
+        className="slides"
+        style={{
+          transform: `translateX(-${currentSlide * 100}%)`,
+        }}
+      >
+        {slides.map((image, index) => (
+          <div className="slide" key={index}>
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+            />
+
+            <div className="slide-overlay">
+              <h1>Clearing & Forwarding</h1>
+              <p>
+                Professional Solutions for a Better Future
+              </p>
+
+              <button>
+                Explore More
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Previous */}
+      <button
+        className="slider-btn prev"
+        onClick={previousSlide}
+      >
+        ❮
+      </button>
+
+      {/* Next */}
+      <button
+        className="slider-btn next"
+        onClick={nextSlide}
+      >
+        ❯
+      </button>
+
+      {/* Dots */}
+      <div className="slider-dots">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            className={currentSlide === index ? "active" : ""}
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </div>
+
+    </section>
+  );
+};
+
+export default Dashboard;
