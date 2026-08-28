@@ -2,11 +2,30 @@ import React, { useEffect, useState } from "react";
 import "./dashboard.css";
 
 const slides = [
-  "/Images/1.png",
-  "/Images/2.png",
-  "/Images/3.jpg",
-  "/Images/4.png",
-  "/Images/5.jpg"
+  {
+    image: "/Images/1.png",
+    title: "Clearing &",
+    title2 : "Forwarding",
+  },
+  {
+    image: "/Images/2.png",
+    title: "Stock",
+    title2:"Evaluation",
+  },
+  {
+    image: "/Images/3.jpg",
+    title: "Solar Energy",
+    title2: "for home and business",
+  },
+  {
+    image: "/Images/4.png",
+    title: "Asset Evaluation",
+  },
+  {
+    image: "/Images/5.jpg",
+    title: "Vehicle &",
+    title2 : "Rolling Equipment",
+  },
 ];
 
 const Dashboard = () => {
@@ -35,6 +54,8 @@ const Dashboard = () => {
   };
 
   return (
+    <>
+  
     <section className="hero-slider">
 
       <div
@@ -43,23 +64,25 @@ const Dashboard = () => {
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {slides.map((image, index) => (
+        {slides.map((slide, index) => (
           <div className="slide" key={index}>
+
             <img
-              src={image}
-              alt={`Slide ${index + 1}`}
+              src={slide.image}
+              alt={slide.title}
             />
 
             <div className="slide-overlay">
-              <h1>Clearing & Forwarding</h1>
-              <p>
-                Professional Solutions for a Better Future
-              </p>
 
-              <button>
-                Explore More
-              </button>
+              <h1>{slide.title}
+                 <br />
+  {slide.title2}
+              </h1>
+
+              
+
             </div>
+
           </div>
         ))}
       </div>
@@ -82,6 +105,7 @@ const Dashboard = () => {
 
       {/* Dots */}
       <div className="slider-dots">
+
         {slides.map((_, index) => (
           <button
             key={index}
@@ -89,9 +113,11 @@ const Dashboard = () => {
             onClick={() => setCurrentSlide(index)}
           />
         ))}
+
       </div>
 
     </section>
+    </>
   );
 };
 

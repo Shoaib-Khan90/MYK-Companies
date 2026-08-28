@@ -31,25 +31,29 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 
-  text-align: center;
+  justify-content: center; /* vertically center */
+  align-items: flex-start; /* left side */
 
-  background: rgba(0, 0, 0, 0.35);
+  text-align: left;
+
+  padding-left: 80px;
 
   color: white;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .slide-overlay h1 {
-  font-size: 55px;
+  font-size: 45px;
   margin: 0 0 15px;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: aliceblue;
+
 }
 
-.slide-overlay p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
 
 .slide-overlay button {
   padding: 12px 28px;

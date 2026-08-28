@@ -47,6 +47,7 @@ const App = () => {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/aboutus/AbouttheFounder" element={<AbouttheFounder />} />
         <Route path="/aboutus/missionvision" element={<MissionVision/>} />
