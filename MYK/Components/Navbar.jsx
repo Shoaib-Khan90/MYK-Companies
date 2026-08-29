@@ -216,6 +216,39 @@ const Navbar = () => {
               <Link to="/services/managementservices">
                 Real Estate Management Services
               </Link>
+
+              <Link to="/services/mergersacquisitions">
+                Mergers & Acquisitions
+              </Link>
+
+              <Link to="/services/preinsurance">
+              PRE INSURANCE EVALUATION
+              </Link>
+
+              <Link to="/services/clearning">
+                CLEARING AND FREIGHT FORWARDING SERVICES
+              </Link>
+
+              <Link to="/services/projectmanagement">
+                PROJECT MANAGEMENT
+              </Link>
+
+
+              <Link to="/services/marketinformation">
+                MARKET INFORMATION
+              </Link>
+
+              <Link to="/services/incomeestimation">
+                INCOME ESTIMATION
+              </Link>
+
+              <Link to="/services/credit">
+                CREDIT EVALUATIONS & CREDIT REPORTS
+              </Link>
+              
+              <Link to="/services/otherservices">
+               OTHER SERVICES
+              </Link>
             </div>
           </li>
 

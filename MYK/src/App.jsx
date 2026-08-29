@@ -40,6 +40,14 @@ import BranchLocation from '../Pages/Branch Location/BranchLocation'
 import Career from "../Pages/Inquiry/Career";
 import Inquiry from "../Pages/Inquiry";
 import Services2 from '../Pages/Services2'
+import MergersAcquisitions from '../Pages/Services/MergersAcquisitions'
+import PreInsurance from "../Pages/Services/PreInsurance";
+import Clearning from "../Pages/Services/Clearning";
+import ProjectManagement from '../Pages/Services/ProjectManagement'
+import MarketInformation from '../Pages/Services/MarketInformation'
+import IncomeEstimation from '../Pages/Services/IncomeEstimation'
+import Credit from '../Pages/Services/Credit'
+import OtherServices from "../Pages/Services/OtherServices";
 
 const App = () => {
   return (
@@ -80,6 +88,14 @@ const App = () => {
         <Route path="/services/building" element={<Building/>} />
         <Route path="/services/marketresearch" element={<MarketResearch/>} />
         <Route path="/services/managementservices" element={<ManagementServices/>} />
+        <Route path="/services/mergersacquisitions" element={<MergersAcquisitions/>} />
+        <Route path="/services/preinsurance" element={<PreInsurance/>} />
+        <Route path="/services/clearning" element={<Clearning/>} />
+        <Route path="/services/marketinformation" element={<MarketInformation/>} />
+        <Route path="/services/incomeestimation" element={<IncomeEstimation/>} />
+        <Route path="/services/credit" element={<Credit/>} />
+        <Route path="/services/otherservices" element={<OtherServices/>} />
+        <Route path="/services/projectmanagement" element={<ProjectManagement/>} />
         <Route path="/affiliation/affiliation" element={<Affiliation/>} />
         <Route path="/ourclients/ourclients" element={<OurClients/>} />
         <Route path="/ourprojects/ourprojects" element={<OurProjects/>} />
