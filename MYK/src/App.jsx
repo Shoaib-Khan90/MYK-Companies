@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css'
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../Pages/Dashboard";
 import Navbar from "../Components/Navbar";
@@ -53,7 +54,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-
+ <main className="page-content">
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -105,6 +106,7 @@ const App = () => {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services2" element={<Services2 />} />
       </Routes>
+      </main>
         <Footer/>          
     </>
   );

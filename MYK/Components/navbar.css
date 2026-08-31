@@ -7,40 +7,30 @@
 }
 
 .navbar-wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+
   width: 100%;
+
+  z-index: 9999;
+
   background: #ffffff;
 }
 
-
-
-
-
-/* ================================
-   MAIN NAVBAR
-================================ */
-
 .navbar {
   width: 100%;
-  max-width: 100%;
   min-height: 82px;
 
-  margin: auto;
   padding: 0 40px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  background: #ffffff;
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
   box-sizing: border-box;
+
+  background: #ffffff;
 }
 
 

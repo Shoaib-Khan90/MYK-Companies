@@ -98,7 +98,7 @@ const Dashboard = () => {
   };
 
   return (
-    <>
+    <div className="fix">
       <section className="hero-slider">
         <div
           className="slides"
@@ -565,7 +565,7 @@ const Dashboard = () => {
       </section>
 
       
-    </>
+    </div>
   );
 };
 
