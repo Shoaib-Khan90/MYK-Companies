@@ -48,7 +48,7 @@ import MarketInformation from '../Pages/Services/MarketInformation'
 import IncomeEstimation from '../Pages/Services/IncomeEstimation'
 import Credit from '../Pages/Services/Credit'
 import OtherServices from "../Pages/Services/OtherServices";
-
+import Footer from '../Components/Footer'
 const App = () => {
   return (
     <>
@@ -104,10 +104,8 @@ const App = () => {
         <Route path="/inquiry" element={<Inquiry />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services2" element={<Services2 />} />
-
-
-          
       </Routes>
+        <Footer/>          
     </>
   );
 };

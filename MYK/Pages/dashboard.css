@@ -1497,43 +1497,43 @@ body,
 
 .client-logo-card {
   width: 240px;
-  height: 150px;
+  height: 200px;
 
-  flex-shrink: 0;
+  flex: 0 0 240px;
 
-  padding: 25px;
+  margin: 0;
+  padding: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 
   background: #ffffff;
 
-  border: 1px solid #e7e9ec;
-  border-radius: 12px;
+  border: 1px solid #e1e4e8;
+  border-radius: 15px;
 
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
 
   box-sizing: border-box;
-
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
 }
 
-
-/* IMAGE */
-
 .client-logo-card img {
-  display: block;
+  position: absolute;
+
+  top: 0;
+  left: 0;
 
   width: 100%;
   height: 100%;
 
-  object-fit: contain;
+  margin: 0;
+  padding: 0;
 
-  transition: transform 0.35s ease;
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 15px;
 }
 
 
@@ -1583,11 +1583,10 @@ body,
     font-size: 34px;
   }
 
-  .client-logo-card {
+   .client-logo-card {
     width: 200px;
     height: 130px;
-
-    padding: 20px;
+    padding: 15px;
   }
 
   .clientele-track {
@@ -1627,11 +1626,10 @@ body,
     padding: 0 10px;
   }
 
-  .client-logo-card {
+   .client-logo-card {
     width: 160px;
     height: 110px;
-
-    padding: 15px;
+    padding: 12px;
   }
 
   .clientele-track {
@@ -1643,6 +1641,15 @@ body,
   .clientele-slider::before,
   .clientele-slider::after {
     width: 40px;
+  }
+}
+
+/* SMALL MOBLIE */
+@media (max-width: 400px) {
+  .client-logo-card {
+    width: 140px;
+    height: 95px;
+    padding: 10px;
   }
 }
 
