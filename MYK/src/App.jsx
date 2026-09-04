@@ -3,6 +3,7 @@ import './index.css'
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../Pages/Dashboard";
 import Navbar from "../Components/Navbar";
+import AboutUs from "../Pages/AboutUs";
 import AbouttheFounder from '../Pages/About Us/AbouttheFounder'
 import MissionVision from "../Pages/About Us/MissionVision";
 import CompanyObjectives from '../Pages/About Us/CompanyObjectives'
@@ -11,7 +12,7 @@ import KeyProfessionals from '../Pages/About Us/KeyProfessionals'
 import DistinctFeatures from '../Pages/About Us/DistinctFeatures'
 import Certifications from '../Pages/About Us/Certifications'
 import GroupCompanies from '../Pages/About Us/GroupCompanies'
-import AboutUs from "../Pages/Energy/AboutUs";
+import AboutUs1 from "../Pages/Energy/AboutUs1";
 import MissionsVision from "../Pages/Energy/MissionsVision";
 import Partners from '../Pages/Energy/Partners'
 import KeyProfessional from "../Pages/Energy/KeyProfessional";
@@ -66,7 +67,7 @@ const App = () => {
         <Route path="/aboutus/distinctfeatures" element={<DistinctFeatures/>} />
         <Route path="/aboutus/certifications" element={<Certifications/>} />
         <Route path="/aboutus/groupcompanies" element={<GroupCompanies/>} />
-        <Route path="/energy/aboutus" element={<AboutUs/>} />
+        <Route path="/energy/aboutus1" element={<AboutUs1/>} />
         <Route path="/energy/missionsvision" element={<MissionsVision/>} />
         <Route path="/energy/partners" element={<Partners/>} />
         <Route path="/energy/keyprofessional" element={<KeyProfessional/>} />

@@ -100,7 +100,7 @@ const Navbar = () => {
 
             <div className="dropdown">
 
-              <Link to="/energy/aboutus">
+              <Link to="/energy/aboutus1">
                 About Us
               </Link>
 
