@@ -127,7 +127,7 @@ const Navbar = () => {
                 </Link>
 
                 <div className="sub-dropdown">
-                  <li>
+                  
   <a
     href="https://www.mykassociates.com/wp-content/uploads/2025/02/Solar-Panel.pdf"
     target="_blank"
@@ -135,7 +135,7 @@ const Navbar = () => {
   >
     Solar Panel
   </a>
-</li>
+
 
                  <a
   href="https://mykassociates.com/wp-content/uploads/2025/02/INVERTERS.pdf"
