@@ -127,21 +127,39 @@ const Navbar = () => {
                 </Link>
 
                 <div className="sub-dropdown">
-                  <Link to="/energy/products/solarpanel">
-                    Solar Panel
-                  </Link>
+                  <li>
+  <a
+    href="https://www.mykassociates.com/wp-content/uploads/2025/02/Solar-Panel.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Solar Panel
+  </a>
+</li>
 
-                  <Link to="/energy/products/inverters">
-                    Inverters
-                  </Link>
+                 <a
+  href="https://mykassociates.com/wp-content/uploads/2025/02/INVERTERS.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Inverters
+</a>
 
-                  <Link to="/energy/products/energystorage">
-                    XD3 Energy Storage System
-                  </Link>
+                  <a
+  href="https://www.mykassociates.com/wp-content/uploads/2025/02/DONGJIN-XD3-ENERGY-STORAGE-SYSTEM.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+ XD3 Energy Storage System
+</a>
 
-                  <Link to="/energy/products/cables">
-                    Cables
-                  </Link>
+                 <a
+  href="https://www.mykassociates.com/wp-content/uploads/2025/02/CABLES.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Cables
+</a>
                 </div>
               </div>
 

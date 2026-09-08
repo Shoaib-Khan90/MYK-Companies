@@ -18,10 +18,6 @@ import Partners from '../Pages/Energy/Partners'
 import KeyProfessional from "../Pages/Energy/KeyProfessional";
 import Efficiencies from '../Pages/Energy/Efficiencies'
 import Products from '../Pages/Energy/Products'
-import SolarPanel from "../Pages/Energy/SolarPanel";
-import Inverters from '../Pages/Energy/Inverters'
-import EnergyStorage from '../Pages/Energy/EnergyStorage'
-import Cables from '../Pages/Energy/Cables'
 import Projects from "../Pages/Energy/Projects";
 import Contact from '../Pages/Energy/Contact'
 import AboutUs2 from "../Pages/Real Estate/AboutUs2";
@@ -73,10 +69,6 @@ const App = () => {
         <Route path="/energy/keyprofessional" element={<KeyProfessional/>} />
         <Route path="/energy/efficiencies" element={<Efficiencies/>} />
         <Route path="/energy/products" element={<Products/>} />
-        <Route path="/energy/products/solarpanel" element={<SolarPanel/>} />
-        <Route path="/energy/products/inverters" element={<Inverters/>} />
-        <Route path="/energy/products/energystorage" element={<EnergyStorage/>} />
-        <Route path="/energy/products/cables" element={<Cables/>} />
         <Route path="/energy/projects" element={<Projects/>} />
         <Route path="/energy/contact" element={<Contact/>} />
         <Route path="/realestate/aboutus2" element={<AboutUs2/>} />
