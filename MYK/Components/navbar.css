@@ -449,7 +449,7 @@
   /* Mobile dropdown show */
 
   .menu-item:hover > .dropdown {
-    display: none;
+    display: block;
   }
 
 
